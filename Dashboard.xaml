@@ -32,7 +32,7 @@
                                FontSize="12" Margin="0,4,0,0"/>
                 </StackPanel>
 
-                <!-- Nav buttons (disabled for now) -->
+                <!-- Nav buttons -->
                 <StackPanel Grid.Row="1" Margin="12,8,12,8">
                     <Button Content="➕  Add Claim"
                             Height="36" Margin="0,6,0,0"
@@ -46,6 +46,12 @@
                             Foreground="White"
                             BorderBrush="#415A77"
                              Click="TrackClaims_Click"/>
+                    <Button Content="✅  Approve Claims"
+        Height="36" Margin="0,6,0,0"
+        Background="Transparent"
+        Foreground="White"
+        BorderBrush="#415A77"
+        Click="ApproveClaims_Click"/>
                     <Button Content="👤  Profile"
                             Height="36" Margin="0,6,0,0"
                             Background="Transparent"
@@ -73,7 +79,7 @@
             </Grid>
         </Border>
 
-        <!-- Content Area (Dashboard content) -->
+        <!-- Content Area -->
         <Grid Grid.Column="1" Background="White" Margin="16">
             <Grid.ColumnDefinitions>
                 <ColumnDefinition Width="2*"/>
@@ -106,7 +112,7 @@
 
             <!-- Right Panel -->
             <StackPanel Grid.Column="1" Margin="8" VerticalAlignment="Top">
-                <!-- Statistics Card -->
+                <!-- Statistics -->
                 <Border Background="White" CornerRadius="8" Padding="12" Margin="0,0,0,12">
                     <StackPanel>
                         <TextBlock Text="Statistics" FontWeight="Bold" FontSize="16"/>
@@ -116,18 +122,16 @@
                     </StackPanel>
                 </Border>
 
-                <!-- Upcoming Deadlines -->
+                <!-- Pending Approvals -->
                 <Border Background="White" CornerRadius="8" Padding="12">
                     <StackPanel>
-                        <TextBlock Text="Upcoming Deadlines" FontWeight="Bold" FontSize="16"/>
-                        <TextBlock Text="Claim #1242 – Review Pending" Margin="0,8,0,0"/>
-                        <TextBlock Text="Claim #1245 – Supporting Docs Required" Margin="0,4,0,0"/>
-                        <TextBlock Text="Claim #1248 – Follow-up in 2 days" Margin="0,4,0,0"/>
+                        <TextBlock Text="Pending Approvals (Manager)" FontWeight="Bold" FontSize="16"/>
+                        <TextBlock Text="Claim #1242 – Awaiting Approval" Margin="0,8,0,0"/>
+                        <TextBlock Text="Claim #1245 – Review Supporting Docs" Margin="0,4,0,0"/>
+                        <TextBlock Text="Claim #1248 – Decision Needed" Margin="0,4,0,0"/>
                     </StackPanel>
                 </Border>
             </StackPanel>
         </Grid>
     </Grid>
 </UserControl>
-
-

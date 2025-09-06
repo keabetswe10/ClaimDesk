@@ -60,6 +60,14 @@ namespace ClaimDesk
             {
                 main.MainContent.Content = new Settings(); // Navigate to Profile page
             }
+            private void ApproveClaims_Click(object sender, RoutedEventArgs e)
+        {
+            // Navigate to ApproveClaims page
+            if (Application.Current.MainWindow is MainWindow mainWindow)
+            {
+                mainWindow.MainContent.Content = new ApproveClaims();
+            }
         }
+    }
     }
 }
