@@ -37,6 +37,14 @@
             <TextBlock Text="Description:" FontWeight="Bold"/>
             <TextBox x:Name="txtDescription" Margin="0,5,0,15" Height="60" AcceptsReturn="True" TextWrapping="Wrap"/>
 
+            <!-- Upload Supporting Document -->
+            <TextBlock Text="Upload Supporting Document:" FontWeight="Bold"/>
+            <StackPanel Orientation="Horizontal" Margin="0,5,0,15">
+                <TextBox x:Name="txtFilePath" Width="400" Height="30" IsReadOnly="True" Text="(No file selected)"/>
+                <Button Content="Browse..." Width="100" Height="30" Margin="10,0,0,0"
+                        Background="#34495E" Foreground="White"/>
+            </StackPanel>
+
             <!-- Buttons -->
             <StackPanel Orientation="Horizontal" HorizontalAlignment="Right" Margin="0,20,0,0">
                 <Button Content="⬅ Back to Dashboard" 
@@ -45,8 +53,7 @@
                         Click="BackToDashboard_Click"/>
                 <Button Content="Submit Claim" 
                         Width="140" Height="35"
-                        Background="#2C3E50" Foreground="White"
-                        />
+                        Background="#2C3E50" Foreground="White"/>
                 <!-- Disabled until backend -->
             </StackPanel>
         </StackPanel>
