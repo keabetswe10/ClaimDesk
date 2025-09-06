@@ -1,0 +1,59 @@
+﻿<UserControl x:Class="ClaimDesk.ApproveClaims"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:ClaimDesk"
+             mc:Ignorable="d" 
+             d:DesignHeight="450" d:DesignWidth="800">
+    <Grid Background="#F5F6FA">
+        <StackPanel Margin="20">
+
+            <!-- Header -->
+            <TextBlock Text="Approve / Reject Claims"
+                       FontSize="22" FontWeight="Bold"
+                       Foreground="#2C3E50"
+                       Margin="0,0,0,20"/>
+
+            <!-- Dummy Claim Card 1 -->
+            <Border Background="White" CornerRadius="8" Padding="12" Margin="0,0,0,12" BorderBrush="#D0D7DE" BorderThickness="1">
+                <StackPanel>
+                    <TextBlock Text="Claim #1001 – Lecturer: Keabetswe Malwa" FontWeight="Bold" FontSize="14"/>
+                    <TextBlock Text="Amount: R2500" Margin="0,4,0,0"/>
+                    <TextBlock Text="Status: Pending Approval" Margin="0,2,0,8"/>
+                    <StackPanel Orientation="Horizontal" HorizontalAlignment="Right" >
+                        <Button Content="Approve" Background="#27AE60" Foreground="White" Padding="10,4"/>
+                        <Button Content="Reject" Background="#C0392B" Foreground="White" Padding="10,4"/>
+                    </StackPanel>
+                </StackPanel>
+            </Border>
+
+            <!-- Dummy Claim Card 2 -->
+            <Border Background="White" CornerRadius="8" Padding="12" Margin="0,0,0,12" BorderBrush="#D0D7DE" BorderThickness="1">
+                <StackPanel>
+                    <TextBlock Text="Claim #1002 – Lecturer: Princess" FontWeight="Bold" FontSize="14"/>
+                    <TextBlock Text="Amount: R1800" Margin="0,4,0,0"/>
+                    <TextBlock Text="Status: Pending Approval" Margin="0,2,0,8"/>
+                    <StackPanel Orientation="Horizontal" HorizontalAlignment="Right" >
+                        <Button Content="Approve" Background="#27AE60" Foreground="White" Padding="10,4"/>
+                        <Button Content="Reject" Background="#C0392B" Foreground="White" Padding="10,4"/>
+                    </StackPanel>
+                </StackPanel>
+            </Border>
+
+            <!-- Dummy Claim Card 3 -->
+            <Border Background="White" CornerRadius="8" Padding="12" Margin="0,0,0,12" BorderBrush="#D0D7DE" BorderThickness="1">
+                <StackPanel>
+                    <TextBlock Text="Claim #1003 – Lecturer: Sandile" FontWeight="Bold" FontSize="14"/>
+                    <TextBlock Text="Amount: R3200" Margin="0,4,0,0"/>
+                    <TextBlock Text="Status: Pending Approval" Margin="0,2,0,8"/>
+                    <StackPanel Orientation="Horizontal" HorizontalAlignment="Right" >
+                        <Button Content="Approve" Background="#27AE60" Foreground="White" Padding="10,4"/>
+                        <Button Content="Reject" Background="#C0392B" Foreground="White" Padding="10,4"/>
+                    </StackPanel>
+                </StackPanel>
+            </Border>
+
+        </StackPanel>
+    </Grid>
+</UserControl>
