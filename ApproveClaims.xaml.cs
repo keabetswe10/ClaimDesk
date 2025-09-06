@@ -24,5 +24,12 @@ namespace ClaimDesk
         {
             InitializeComponent();
         }
+        private void BackToDashboard_Click(object sender, RoutedEventArgs e)
+        {
+            if (Application.Current.MainWindow is MainWindow mainWindow)
+            {
+                mainWindow.MainContent.Content = new Dashboard();
+            }
+        }
     }
 }

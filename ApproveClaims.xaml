@@ -9,6 +9,16 @@
     <Grid Background="#F5F6FA">
         <StackPanel Margin="20">
 
+            
+            <Button Content="⬅ Back to Dashboard"
+                    Background="#2C3E50"
+                    Foreground="White"
+                    Padding="10,5"
+                    Width="180"
+                    HorizontalAlignment="Left"
+                    Click="BackToDashboard_Click"
+                    Margin="0,0,0,20"/>
+
             <!-- Header -->
             <TextBlock Text="Approve / Reject Claims"
                        FontSize="22" FontWeight="Bold"
@@ -18,7 +28,7 @@
             <!-- Dummy Claim Card 1 -->
             <Border Background="White" CornerRadius="8" Padding="12" Margin="0,0,0,12" BorderBrush="#D0D7DE" BorderThickness="1">
                 <StackPanel>
-                    <TextBlock Text="Claim #1001 – Lecturer: Keabetswe Malwa" FontWeight="Bold" FontSize="14"/>
+                    <TextBlock Text="Claim #1001 – Lecturer: John Doe" FontWeight="Bold" FontSize="14"/>
                     <TextBlock Text="Amount: R2500" Margin="0,4,0,0"/>
                     <TextBlock Text="Status: Pending Approval" Margin="0,2,0,8"/>
                     <StackPanel Orientation="Horizontal" HorizontalAlignment="Right" >
@@ -31,7 +41,7 @@
             <!-- Dummy Claim Card 2 -->
             <Border Background="White" CornerRadius="8" Padding="12" Margin="0,0,0,12" BorderBrush="#D0D7DE" BorderThickness="1">
                 <StackPanel>
-                    <TextBlock Text="Claim #1002 – Lecturer: Princess" FontWeight="Bold" FontSize="14"/>
+                    <TextBlock Text="Claim #1002 – Lecturer: Jane Smith" FontWeight="Bold" FontSize="14"/>
                     <TextBlock Text="Amount: R1800" Margin="0,4,0,0"/>
                     <TextBlock Text="Status: Pending Approval" Margin="0,2,0,8"/>
                     <StackPanel Orientation="Horizontal" HorizontalAlignment="Right" >
@@ -44,7 +54,7 @@
             <!-- Dummy Claim Card 3 -->
             <Border Background="White" CornerRadius="8" Padding="12" Margin="0,0,0,12" BorderBrush="#D0D7DE" BorderThickness="1">
                 <StackPanel>
-                    <TextBlock Text="Claim #1003 – Lecturer: Sandile" FontWeight="Bold" FontSize="14"/>
+                    <TextBlock Text="Claim #1003 – Lecturer: Sipho Dlamini" FontWeight="Bold" FontSize="14"/>
                     <TextBlock Text="Amount: R3200" Margin="0,4,0,0"/>
                     <TextBlock Text="Status: Pending Approval" Margin="0,2,0,8"/>
                     <StackPanel Orientation="Horizontal" HorizontalAlignment="Right" >
